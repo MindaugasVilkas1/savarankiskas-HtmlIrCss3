@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="/savarankiskas-HtmlIrCss/style/main.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <h1> Trail BK Vilkas</h1>
+            <img src="/savarankiskas-HtmlIrCss/images/nike.png">
+        </header>
+        <section>
+            <div class="home">
+                <nav>
+                    <a href="/savarankiskas-HtmlIrCss/index.html">Apie mus</a>
+                    <a href="/savarankiskas-HtmlIrCss/index/indexgalerija.html">Galerija</a>
+                    <a href="#contacts">Kontaktai</a>
+                </nav>
+            </div>
+            <div class="registracija">
+                <label for="Pasirinkimas"></label>
+                <select name="Pasirinkimas" id=Pasirinkimas>
+                <option value="Registration">Registracija į Bėgimo klubą</option>
+                <option value="Registration">Registracija į bėgimą</option>
+                <label for="Name"></label>
+                <input type="text" name="Name" id="Name" placeholder="Vardas" required> 
+                <label for="Pavarde"></label>
+                <input type="text" name="Pavarde" id="Pavarde" placeholder="Pavardė" required> 
+                <label for="elpastas"></label>
+                <input type="email" name="elpastas" id="elpastas" placeholder="Elektroninis paštas" required>
+                <label for="numberInput"></label>
+               <input type="number" name="NumberInput" id="numberInput" min="10" required placeholder="Jūsų amžius"> 
+               <label for="phoneInput"></label>
+               <input type="tel" name="phoneInput" id="phoneInput" placeholder="Jūsų telefono numeris">
+                <button>Patvirtinti</button>
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <h1>Jei susidomejote, sekite mus socialiniuiose tinkluose!</h1>
+            <div>
+            <a href="https://www.facebook.com/mindaugas.vilkas1"><i class="bi bi-facebook"></i></a>
+             <a href="https://www.instagram.com/vilkasmindaugas/"><i class="bi bi-instagram"></i></a>
+             </div>
+            <h2>El. Paštas bei tel.numeris:</h2>
+            <p>Mindaugasvilkas3@yahoo.com</p>
+            <p>Tel. +37067786956</p>
+        </div>
+        </section>
+        <footer>Copyright © 2022. Mindaugas Vilkas</footer>
+    </div>
 </body>
 </html>

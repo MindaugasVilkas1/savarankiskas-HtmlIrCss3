@@ -1,14 +1,173 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
-
 body {
-  background-color: #a09696;
-  margin: 0;
+    background-color: black;
+    margin: 0;
 }
 
 .container {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 10px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+header img {
+    max-height: 100px;
+    max-width: 170px;
+}
+
+h1,
+h2 {
+    color: white;
+    font-style: italic;
+    text-shadow: 1px 1px white;
+    display: inline-block;
+    font-size: 2rem;
+    padding-right: 20px;
+}
+
+section {
+    margin: 0 auto;
+}
+
+.home {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #a89f9f;
+    font-style: italic;
+    font-size: 2rem;
+    border: 2px solid #a89f9f;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #3d442b;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div img {
+    width: 370px;
+    width: 350px;
+}
+
+div p {
+    color: #f1ebeb;
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #3d442b;
+}
+
+i {
+    font-size: 40px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.registracija {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #a89f9f;
+    font-style: italic;
+    font-size: 2rem;
+    border: 2px solid #a89f9f;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+input:hover {
+    background-color: #3d442b;
+}
+
+button:hover {
+    background-color: #3d442b;
+}
+
+@media (min-width: 960px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav a {
+        width: 390px;
+    }
+    input,
+    button {
+        width: 280px;
+    }
+    .registracija {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        display: flex;
+    }
+    nav a {
+        width: 200px;
+    }
+    .about {
+        display: flex;
+        gap: 0px 10px;
+        justify-content: space-between;
+    }
+    .about div:nth-child(1) {
+        width: 100px;
+    }
+    .about div:nth-child(3) {
+        width: 220px;
+    }
 }
